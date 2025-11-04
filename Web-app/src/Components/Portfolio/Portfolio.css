@@ -1,22 +1,82 @@
-.port-title h1{
-    font-weight: 700;
-    font-size: 45px;
-    letter-spacing: 2px;
+.port-title h1 {
+  font-weight: 700;
+  font-size: 45px;
+  letter-spacing: 2px;
 }
 
-.port-title h6{
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1.5px;
+.port-title h6 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #555;
 }
 
-.port-nav{
-    letter-spacing: 2px;
-    font-size: 13px;
+.port-nav {
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
+.port-nav .nav-link {
+  color: #000;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.port-nav .nav-link:hover {
+  background-color: #FFD321;
+  color: white !important;
+}
+
+.port-nav .nav-link.active,
 .port-nav .nav-link:first-child {
-    background-color: #FFD321;
-    color: white;
-    padding: 8px 20px;
+  background-color: #FFD321;
+  color: white !important;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .port-title h1 {
+    font-size: 36px;
+  }
+  .port-title h6 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .port-nav {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .port-title h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .port-title h1 {
+    font-size: 28px;
+  }
+
+  .port-title h6 {
+    font-size: 12px;
+  }
+
+  .port-nav .nav-link {
+    padding: 6px 10px;
+  }
 }

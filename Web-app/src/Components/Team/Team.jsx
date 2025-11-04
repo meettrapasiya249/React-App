@@ -4,41 +4,44 @@ import team2 from '../../assets/t2.jpg';
 import team3 from '../../assets/t3.jpg';
 
 const Team = () => {
+  return (
+    <section className="team-section py-5">
+      <div className="container">
+        <div className="team-title text-center mb-5">
+          <h2>Our Team</h2>
+          <h6>CREATIVE TALENTS FROM WEST COAST</h6>
+        </div>
 
-    return (
-        <>
-            <section>
-                <div className="container">
-                    <div className="team-title text-center mt-3">
-                        <h2>Our Team</h2>
-                        <h6>CREATIVE TALENTS FROM WEST COAST</h6>
-                    </div>
-
-                    <div className="team-content mt-4">
-                        <div className="row">
-                            <div className="col-4 text-center team-content">
-                                <img src={team1} alt="" className="img-fluid" />
-                                <h5 className='mt-4'>Tracy</h5>
-                                <h3>Designer</h3>
-                            </div>
-
-                            <div className="col-4 text-center team-content">
-                                <img src={team2} alt="" className="img-fluid" />
-                                <h5 className='mt-4'>Linda</h5>
-                                <h3>Manager</h3>
-                            </div>
-
-                            <div className="col-4 text-center team-content">
-                                <img src={team3} alt="" className="img-fluid" />
-                                <h5 className='mt-4'>Mary</h5>
-                                <h3>Developer</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
+        <div className="team-content">
+          <div className="row justify-content-center g-4"> 
+            <div className="col-12 col-sm-6 col-md-4 text-center">
+              <div className="team-member">
+                <img src={team1}   className="img-fluid rounded-circle mb-3" />
+                <h5>Tracy</h5>
+                <h6>Designer</h6>
+              </div>
+            </div>
+ 
+            <div className="col-12 col-sm-6 col-md-4 text-center">
+              <div className="team-member">
+                <img src={team2}   className="img-fluid rounded-circle mb-3" />
+                <h5>Linda</h5>
+                <h6>Manager</h6>
+              </div>
+            </div>
+ 
+            <div className="col-12 col-sm-6 col-md-4 text-center">
+              <div className="team-member">
+                <img src={team3}   className="img-fluid rounded-circle mb-3" />
+                <h5>Mary</h5>
+                <h6>Developer</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Team;

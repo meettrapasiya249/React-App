@@ -2,28 +2,72 @@
   background-color: #f4f3f3;
 }
 
-.contact-item  {
-    margin-left: 80px;
+.contact-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.contact-title p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.contact-item i {
+  color: #FFD321;
 }
 
 .contact-item p {
   font-weight: 700;
-  margin: 0;
+  margin-top: 5px;
+}
+ 
+.contact-item {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+ 
+.contact-section input,
+.contact-section textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@media (max-width: 767px) {
-  .col-md-6 {
-    margin-top: 15px;
+.contact-section textarea {
+  resize: none;
+}
+ 
+button {
+  padding: 12px 40px;
+  border: 2px solid #000;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+ 
+@media (max-width: 992px) {
+  .contact-item {
+    margin-left: 0;
   }
 }
 
- 
-.contact-section textarea {
-  height: 150px;  
-  resize: none;  
-}
-
-button{
-  padding: 10px 100px;
-  background-color: transparent;
+@media (max-width: 576px) {
+  .contact-title h2 {
+    font-size: 28px;
+  }
+  .contact-title p {
+    font-size: 12px;
+  }
+  button {
+    padding: 10px 30px;
+  }
 }

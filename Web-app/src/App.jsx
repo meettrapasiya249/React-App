@@ -10,14 +10,17 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <About />
+      <About />
       <Blog />
       <Portfolio />
-      <Team />
+      <Team />  
       <Contact />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }
 
 export default App
+
+
+
