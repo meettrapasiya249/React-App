@@ -1,0 +1,22 @@
+.port-title h1{
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.port-title h6{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.port-nav{
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.port-nav .nav-link:first-child {
+    background-color: #FFD321;
+    color: white;
+    padding: 8px 20px;
+}

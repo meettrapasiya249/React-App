@@ -1,0 +1,29 @@
+.contact-section {
+  background-color: #f4f3f3;
+}
+
+.contact-item  {
+    margin-left: 80px;
+}
+
+.contact-item p {
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .col-md-6 {
+    margin-top: 15px;
+  }
+}
+
+ 
+.contact-section textarea {
+  height: 150px;  
+  resize: none;  
+}
+
+button{
+  padding: 10px 100px;
+  background-color: transparent;
+}

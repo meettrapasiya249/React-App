@@ -1,0 +1,18 @@
+.team-title h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.team-title h6{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.team-content h3{
+    font-weight: 600;
+}
+.team-content h5{
+    font-weight: 600;
+}
